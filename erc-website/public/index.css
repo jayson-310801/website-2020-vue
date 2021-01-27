@@ -1,0 +1,51 @@
+/* We will define all the common things here only */
+/*
+Examples: 
+* fonts = like primaryFont
+* font sizes
+* heading and paragraph styles
+* colors
+* some other variables - like one defined here
+*/
+
+
+:root {
+  /* converting px value to vh, vw, rem */
+  /* displays 1px when in 1920x1080 screen */
+  --px-to-vh: 0.09259259259259259vh;
+  --px-to-vw: 0.052083333333333336vw;
+  --px-to-rem: 0.0625rem;
+
+  /* colors */
+  --bg-color-dark: #1c1d21;
+  --bg-color: #1f2833;
+  --primary-blue: #2c9da5;
+  --secondary-blue: #66fcf1;
+  --text-color: #ffffff;
+  --white: #ffffff;
+  
+  /* sizes */
+  --font-size-16: 8.333333333333vw;
+}
+
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* fonts */
+@font-face {
+  font-family: PrimaryText;
+  src: 'Montserrat', 'Helvetica', 'Arial', sans-serif;
+}
+
+/*Azonix remains = primary heading */
+
+@font-face {
+  font-family: SecondaryHeading;
+  src: 'Poppins', 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
