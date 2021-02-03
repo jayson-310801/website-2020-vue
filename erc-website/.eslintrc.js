@@ -11,7 +11,8 @@ module.exports = {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'warn',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     camelcase: 'warn',
-    'prettier/prettier': 'warn'
+    'prettier/prettier': 'warn',
+    'no-unused-vars': 'off'
   },
   overrides: [
     {
